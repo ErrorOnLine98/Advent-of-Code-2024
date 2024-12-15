@@ -7,16 +7,16 @@ def is_safe_report(report):
     decreasing = True
 
     for i in range(1, len(report)):
-        diff = report[i] - report[i - 1]
+        difference = report[i] - report[i - 1]
 
         # Check the difference condition
-        if abs(diff) < 1 or abs(diff) > 3:
+        if abs(difference) < 1 or abs(difference) > 3:
             return False
 
         # Check increasing or decreasing condition
-        if diff < 0:
+        if difference < 0:
             increasing = False
-        if diff > 0:
+        if difference > 0:
             decreasing = False
 
     # A report is safe if it's either strictly increasing or strictly decreasing
