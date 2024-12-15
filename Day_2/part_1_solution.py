@@ -40,7 +40,7 @@ def main():
         if is_safe_report(report):
             safe_count += 1
 
-    print(f"Safe reports: {safe_count}")
+    print(f"Total safe reports: {safe_count}")
 
 
 if __name__ == '__main__':
