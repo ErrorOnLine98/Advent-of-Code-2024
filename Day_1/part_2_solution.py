@@ -22,8 +22,6 @@ def main():
         similarity_score = left_num * occurrences
         total_similarity_score += similarity_score
 
-        print(f"Similarity score = {left_num} * {occurrences} = {similarity_score}")
-
     print(f"\nTotal similarity score = {total_similarity_score}")
 
 
